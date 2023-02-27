@@ -40,7 +40,7 @@ class GameMainContainer extends Component {
             <li>1</li>
           </ScoreDetailsContainer>
         </ScoreContainer>
-        <GameView />
+        <GameView choicesList={choicesList} />
       </GameBGContainer>
     )
   }

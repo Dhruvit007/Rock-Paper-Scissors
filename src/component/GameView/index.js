@@ -1,19 +1,13 @@
-const GameView = () => {
-  const a = 2
+import {GameItemContainer, GameItem, Image} from './styledComponent'
+
+const GameView = props => {
+  const {choicesList} = props
   return (
-    <>
-      <div>
-        <button>
-          <img />
-        </button>
-        <button>
-          <img />
-        </button>
-      </div>
-      <button>
-        <img />
-      </button>
-    </>
+    <GameItemContainer>
+      {choicesList.map(eachItem => (
+        <Image alt="imageUrl" src={eachItem.imageUrl} />
+      ))}
+    </GameItemContainer>
   )
 }
 
